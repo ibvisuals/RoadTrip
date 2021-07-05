@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo">logo</string>
+    <string name="destinations_top_places_to_visit_stay">Destinations - Top places to visit/Stay</string>
+    <string name="recyclerviewofthedestination">recyclerviewofthedestination</string>
+    <string name="textviewofdestination">textviewofdestination</string>
+    <string name="textviewofcuisine">textviewofcuisine</string>
+    <string name="cuisine_food_and_drink">(Cuisine)Food and drink</string>
+    <string name="cuisine_food_and_drink">(Cuisine)Food and drink</string>
+    <string name="food_drink_and_recipes">Food, Drink and Recipes</string>
+    <string name="top_places_to_dine_images_of_food_and_drink_recipes">Top places to dine/Images of food and drink/Recipes</string>
+    <string name="history_and_culture">History and Culture</string>
+    <string name="top_places_to_visit_stay">Top Places To Visit/Stay</string>
+    <string name="home">Home</string>
+    <string name="string_home" />
+    <string name="string_string_home">Home</string>
+    <string name="feed">Feed</string>
+    <string name="string_feed">Feed</string>
+    <string name="string_string_feed">Feed</string>
+    <string name="account">Account</string>
+    <string name="string_account" />
+    <string name="string_string_account">Account</string>
+    <string name="favorite_user_posts">Favorite User Posts</string>
+    <string name="login_email">login_email</string>
+    <string name="email">email</string>
+    <string name="rtlogo">rt_logo</string>
+    <string name="login_password">login_password</string>
+    <string name="password">password</string>
+    <string name="sign_in">sign_in</string>
+    <string name="sign_in_btn">Sign In</string>
+</resources>
