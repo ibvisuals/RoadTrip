@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171640538491",
+    "project_id": "roadtrip-e6877",
+    "storage_bucket": "roadtrip-e6877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171640538491:android:d52d1b886422b4aca569de",
+        "android_client_info": {
+          "package_name": "com.example.roadtrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171640538491-jdd6lb537p0s4toe9h3gnqssinr347s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo12SDAajT5JYaRihR2jwEaWwsiXgT54g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171640538491-jdd6lb537p0s4toe9h3gnqssinr347s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

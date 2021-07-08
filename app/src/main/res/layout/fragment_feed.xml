@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@id/favouritetextview" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomnav"
+        android:id="@+id/bottom_nav"
         style="@style/Widget.Design.BottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="55dp"
