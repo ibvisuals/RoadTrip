@@ -1,4 +1,4 @@
-package com.example.roadtrip;
+ package com.example.roadtrip;
 
 import android.os.Bundle;
 
@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,15 +29,12 @@ public class SignInFragment extends Fragment {
     private EditText loginEmail;
     private EditText loginPassword;
     private Button signInBtn;
-
+    private Button sign_in_button;
 
 
     public SignInFragment() {
         // Required empty public constructor
     }
-
-
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,6 +42,13 @@ public class SignInFragment extends Fragment {
         if (getArguments() != null) {
 
         }
+        // Configure sign-in to request the user's ID, email address, and basic
+        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+
     }
 
     @Override
@@ -100,10 +105,11 @@ public class SignInFragment extends Fragment {
             }
         });
 
-
     }
 
     private void updateUI() {
+        Navigation.findNavController(signInBtn).navigate(R.id.action_signInFragment_to_accountFragment);
+
 
     }
 }

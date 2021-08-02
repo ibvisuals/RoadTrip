@@ -27,6 +27,7 @@
         android:autofillHints="@string/email"
         android:hint="Email Address"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"
@@ -45,6 +46,7 @@
         android:autofillHints="@string/password"
         android:hint="Password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="20dp"
@@ -60,15 +62,15 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
+        android:background="@color/colorGreen"
         android:text="@string/sign_in_btn"
         android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#0D47A1"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="@id/loginPassword"
         app:layout_constraintRight_toRightOf="@id/loginPassword"
-        app:layout_constraintTop_toBottomOf="@id/loginPassword"
-        android:background="@color/colorGreen"
-        />
+        app:layout_constraintTop_toBottomOf="@id/loginPassword" />
 
     <TextView
         android:id="@+id/ortextView"
@@ -90,6 +92,7 @@
         android:background="@color/colorGreen"
         android:text="Google"
         android:textAllCaps="false"
+        android:textColor="#0D47A1"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/signInBtn"

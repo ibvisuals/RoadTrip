@@ -9,7 +9,6 @@
     <string name="textviewofdestination">textviewofdestination</string>
     <string name="textviewofcuisine">textviewofcuisine</string>
     <string name="cuisine_food_and_drink">(Cuisine)Food and drink</string>
-    <string name="cuisine_food_and_drink">(Cuisine)Food and drink</string>
     <string name="food_drink_and_recipes">Food, Drink and Recipes</string>
     <string name="top_places_to_dine_images_of_food_and_drink_recipes">Top places to dine/Images of food and drink/Recipes</string>
     <string name="history_and_culture">History and Culture</string>
@@ -31,4 +30,7 @@
     <string name="password">password</string>
     <string name="sign_in">sign_in</string>
     <string name="sign_in_btn">Sign In</string>
+    <string name="facebook_app_id">2016745205140433</string>
+    <string name="fb_login_protocol_scheme">fb2016745205140433</string>
+
 </resources>

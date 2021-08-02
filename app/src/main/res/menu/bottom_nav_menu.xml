@@ -9,6 +9,12 @@
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@id/feedFragment"
+        android:icon="@drawable/ic_baseline_favorite"
+        android:title="Favourites"
+        app:showAsAction="ifRoom"/>
+
+    <item
         android:id="@+id/feedFragment"
         android:icon="@drawable/ic_baseline_comment"
         android:title="@string/string_string_feed"

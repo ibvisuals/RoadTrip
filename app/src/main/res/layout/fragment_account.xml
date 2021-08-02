@@ -14,31 +14,70 @@
 
     <TextView
         android:id="@+id/account_title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:text="My Account"
-        android:textSize="28sp"
-        android:textColor="@color/colorGreen"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginTop="16dp"
+        android:text="My Account"
+        android:textColor="@color/colorGreen"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/signInBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
+        android:background="@color/colorGreen"
+        android:text="Sign In"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/account_title"
-        app:layout_constraintBaseline_toBaselineOf="@id/account_title"
         android:visibility="invisible"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@id/account_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="@id/account_title"
+        app:layout_constraintTop_toBottomOf="@id/account_title">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintTop_toTopOf="@id/profilePic"
+        app:layout_constraintLeft_toRightOf="@id/profilePic"
+        app:layout_constraintRight_toRightOf="@id/signInBtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="24sp"
         />
 
+    <Button
+        android:id="@+id/myUploads"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorGreen"
+        android:text="My Uploads"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#0D47A1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/profilePic"
+        app:layout_constraintRight_toRightOf="@id/signInBtn"
+        app:layout_constraintTop_toBottomOf="@id/profilePic" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

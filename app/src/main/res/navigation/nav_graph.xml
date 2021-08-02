@@ -14,5 +14,32 @@
         android:id="@+id/homeFragment"
         android:name="com.example.roadtrip.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_destinationsDetailsFragment"
+            app:destination="@id/destinationsDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.roadtrip.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" >
+        <action
+            android:id="@+id/action_signInFragment_to_accountFragment"
+            app:destination="@id/accountFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment2"
+        android:name="com.example.roadtrip.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/destinationsDetailsFragment"
+        android:name="com.example.roadtrip.DestinationsDetailsFragment"
+        android:label="fragment_destinations_details"
+        tools:layout="@layout/fragment_destinations_details" />
 </navigation>
