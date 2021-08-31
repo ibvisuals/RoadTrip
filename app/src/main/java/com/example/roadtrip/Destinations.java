@@ -1,5 +1,7 @@
 package com.example.roadtrip;
 
+import java.util.Map;
+
 public class Destinations {
     private String id;
     private String name;
@@ -40,6 +42,21 @@ public class Destinations {
 
     public void setAbout(String about) {
         this.about = about;
+    }
+
+    public static Destinations fromMapToDestinations(Map<String, Object> map) {
+        Destinations d = null;
+
+        if (map != null) {
+
+            d = new Destinations();
+
+            if (map.containsKey("id")) d.setId(map.get("id").toString());
+            if (map.containsKey("name")) d.setName(map.get("name").toString());
+            if (map.containsKey("location")) d.setLocation(map.get("location").toString());
+            if (map.containsKey("about")) d.setAbout(map.get("about").toString());
+        }
+        return d;
     }
 
     @Override
